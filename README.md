@@ -1,6 +1,6 @@
 # Luigi's Mansion Hall
 
-A 3D graphics project recreating the iconic hall from Luigi's Mansion using C++ and OpenGL. This was my first experience working with both OpenGL and C++, developed as a group project focused on computer graphics and real-time rendering techniques.
+This was my first experience working with both OpenGL and C++, developed as a group project focused on computer graphics and real-time rendering techniques.
 
 ## Project Overview
 
