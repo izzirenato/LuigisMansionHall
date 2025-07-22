@@ -1,0 +1,128 @@
+# Build directories
+build/
+x64/
+Debug/
+Release/
+bin/
+obj/
+
+# Visual Studio files
+*.vcxproj.user
+*.vcxproj.filters.user
+.vs/
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# Temporary build files
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Compiled binaries
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.map
+*.pdb
+
+# Visual Studio cache/options directory
+.vs/
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+*.PublishSettings
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Windows Azure Build Output
+csx/
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+
+# Others
+sql/
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Other build systems
+*.make

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{75732EC5-3F5C-4B0C-8C7B-5F4D9A123456}</UniqueIdentifier>
+      <Extensions>vert;frag;glsl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\rendering\glad.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\Model.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\ShaderManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Camera.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Matrix3f.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Matrix4f.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Quaternion.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Vector3f.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\math\Vector4f.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\LuigisMansionHall.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\lighting\LightManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\models\ModelManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\window\WindowManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\input\InputManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\scene\SceneManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\SkyboxManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\effects\EffectsManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\glad\glad.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3native.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KHR\khrplatform.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendering\Model.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendering\ShaderManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Camera.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Matrix3f.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Matrix4f.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Quaternion.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Vector3f.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\Vector4f.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\lighting\LightManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\models\ModelManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\window\WindowManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\input\InputManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\scene\SceneManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\SkyboxManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\effects\EffectsManager.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\textures\IMG0.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG1.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG10.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG11.001.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG11.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG12.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG13.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG14.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG15.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG16.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG17.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG18.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG19.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG2.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG20.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG21.001.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG21.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG22.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG23.001.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG23.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG24.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG3.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG4.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG5.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG6.001.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG6.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG7.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG8.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="assets\textures\IMG9.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\rendering\Shader.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\rendering\Shader.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shaders\mirror.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\mirror.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\common.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\phong.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\lambert.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\skybox.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\skybox.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\directional_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="assets\shaders\point_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="glsl assets\shaders\phong.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

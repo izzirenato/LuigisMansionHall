@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LuigisMansionHall>
+	<Scene>
+		<Camera>
+			<Position x="0" y="0" z="0"/>
+			<Target x="0" y="0" z="-1"/>
+			<FOV>60</FOV>
+			<Speed>15</Speed>
+		</Camera>
+
+		
+
+		<Lighting>
+			<!-- Luce ambientale -->
+			<AmbientLight r="0.06" g="0.06" b="0.07"/>
+			<!--<AmbientLight r="0.12" g="0.12" b="0.14"/>-->
+			
+			<!-- Luce direzionale principale (luna fredda) -->
+			<DirectionalLight name="MoonLight" enabled="true">
+				<Direction x="-0.3" y="-1.0" z="-0.1"/>
+				<Color r="0.8" g="0.9" b="1.1"/>
+				<!--<Color r="3.2" g="3.6" b="4.4"/>-->
+			</DirectionalLight>
+
+			<!-- Luci dei candelabri - 6 candele blu -->
+			<PointLight name="Candelabra_Right1" enabled="true">
+				<Position x="15.40" y="8.15" z="1.13"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<PointLight name="Candelabra_Right2" enabled="true">
+				<Position x="16.10" y="8.0" z="1.13"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<PointLight name="Candelabra_Right3" enabled="true">
+				<Position x="14.50" y="8.1" z="1.13"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<PointLight name="Candelabra_Left1" enabled="true">
+				<Position x="-14.90" y="8.15" z="1.13"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<PointLight name="Candelabra_Left2" enabled="true">
+				<Position x="-15.66" y="8.0" z="1.09"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<PointLight name="Candelabra_Left3" enabled="true">
+				<Position x="-13.90" y="7.85" z="1.09"/>
+				<Color r="0.8" g="1.2" b="3.6"/>
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+			
+			<PointLight name="Candelabro_Centrale" enabled="true">
+				<Position x="0" y="17" z="9.7"/>
+				<Color r="3" g="3" b="10.0"/>  
+				<Constant>1.0</Constant>
+				<Linear>0.16</Linear>
+				<Quadratic>0.07</Quadratic>
+			</PointLight>
+
+			<!-- Luce dinamica della camera (con effetto respiro) -->
+			<PointLight name="CameraLight" enabled="true" dynamic="true">
+				<Position x="0" y="0" z="0"/>
+				<Color r="4.0" g="4.5" b="4.5"/>  
+				<Constant>1.0</Constant>
+				<Linear>1.2</Linear>              
+				<Quadratic>0.1</Quadratic>       
+				<BreathingEffect enabled="true" speed="1.2" minIntensity="0.8" maxIntensity="1.4"/>
+			</PointLight>
+
+			<!-- Luce del Boo (attivata quando Boo è presente) -->
+			<PointLight name="BooLight" enabled="true" dynamic="true">
+				<Position x="0" y="0" z="0"/>
+				<Color r="4.0" g="4.5" b="4.5"/>
+				<Constant>1.0</Constant>
+				<Linear>1.2</Linear>
+				<Quadratic>0.1</Quadratic>
+				<BreathingEffect enabled="true" speed="1.2" minIntensity="0.8" maxIntensity="1.4"/>
+			</PointLight>
+
+			<!-- Skybox per illuminazione ambientale IBL -->
+			<Skybox>
+				<Type>procedural_night</Type> <!-- Generato proceduralmente -->
+				<IBLStrength>0.25</IBLStrength>
+				<AmbientStrength>0.5</AmbientStrength>
+			</Skybox>
+		</Lighting>
+
+		<Materials>
+			<!-- Materiali con tipi predefiniti -->
+			<Material name="Batch_0SG" type="phong">
+				<Texture file="assets/textures/IMG0.png"/>
+			</Material>
+
+			<Material name="Batch_4SG" type="phong">
+				<Texture file="assets/textures/IMG4.png"/>
+			</Material>
+
+			<Material name="Batch_5SG" type="phong">
+				<Texture file="assets/textures/IMG5.png"/>
+			</Material>
+
+			<Material name="Batch_6SG" type="lambert">
+				<Texture file="assets/textures/IMG6.png"/>
+			</Material>
+
+			<Material name="Batch_7SG" type="lambert">
+				<Texture file="assets/textures/IMG6.001.png"/>
+			</Material>
+
+			<Material name="Batch_8SG" type="phong">
+				<Texture file="assets/textures/IMG7.png"/>
+			</Material>
+
+			<Material name="initialShadingGroup" type="phong">
+				<Texture file="assets/textures/IMG7.png"/>
+			</Material>
+
+			<Material name="Batch_9SG" type="phong">
+				<Texture file="assets/textures/IMG8.png"/>
+			</Material>
+
+			<Material name="Batch_10SG" type="lambert">
+				<Texture file="assets/textures/IMG9.png"/>
+			</Material>
+
+			<Material name="Batch_13SG" type="phong">
+				<Texture file="assets/textures/IMG12.png"/>
+			</Material>
+
+			<Material name="Batch_18SG" type="lambert">
+				<Texture file="assets/textures/IMG11.001.png"/>
+			</Material>
+
+			<Material name="Batch_20SG" type="phong">
+				<Texture file="assets/textures/IMG14.png"/>
+			</Material>
+			
+			<Material name="Batch_26SG" type="lambert">
+				<Texture file="assets/textures/IMG13.png"/>
+			</Material>
+
+			<Material name="Batch_27SG" type="phong">
+				<Texture file="assets/textures/IMG1.png"/>
+			</Material>
+
+			<Material name="Batch_28SG" type="phong">
+				<Texture file="assets/textures/IMG17.png"/>
+			</Material>
+
+			<Material name="Batch_29SG" type="lambert">
+				<Texture file="assets/textures/IMG10.png"/>
+			</Material>
+
+			<Material name="Batch_30SG" type="phong">
+				<Texture file="assets/textures/IMG18.png"/>
+			</Material>
+
+			<Material name="Batch_31SG" type="phong">
+				<Texture file="assets/textures/IMG19.png"/>
+			</Material>
+
+			<Material name="Batch_32SG" type="lambert">
+				<Texture file="assets/textures/IMG11.png"/>
+			</Material>
+
+			<Material name="Batch_33SG" type="phong">
+				<Texture file="assets/textures/IMG20.png"/>
+			</Material>
+
+			<Material name="Batch_34SG" type="phong">
+				<Texture file="assets/textures/IMG21.png"/>
+			</Material>
+
+			<Material name="Batch_35SG" type="phong">
+				<Texture file="assets/textures/IMG21.001.png"/>
+			</Material>
+
+			<Material name="Batch_36SG" type="phong">
+				<Texture file="assets/textures/IMG22.png"/>
+			</Material>
+
+			<Material name="Batch_37SG" type="phong">
+				<Texture file="assets/textures/IMG23.png"/>
+			</Material>
+
+			<Material name="Batch_38SG" type="phong">
+				<Texture file="assets/textures/IMG23.001.png"/>
+			</Material>
+
+			<Material name="Batch_39SG" type="phong">
+				<Texture file="assets/textures/IMG24.png"/>
+			</Material>
+
+			<Material name="Batch_40SG" type="phong">
+				<Texture file="assets/textures/IMG3.png"/>
+			</Material>
+
+			
+			<!-- Batch_8SG già definito sopra con IMG7.png -->
+			
+			<Material name="Standard_Surface2SG" type="phong">
+				<Texture file="assets/textures/gold.jpg"/>
+			</Material>
+
+			<Material name="Standard_Surface1SG" type="phong">
+				<Texture file="assets/textures/pearl.jpg"/>
+			</Material>
+			<!-- Materiali per boo -->
+			<Material name="Mesh0SG" type="lambert">
+				<Texture file="assets/textures/Texture3.png"/>
+			</Material>
+			<Material name="Mesh1SG" type="lambert">
+				<Texture file="assets/textures/Texture0.png"/>
+			</Material>
+			<Material name="Mesh2SG" type="lambert">
+				<Texture file="assets/textures/Texture1.png"/>
+			</Material>
+			<Material name="Mesh3SG" type="lambert">
+				<Texture file="assets/textures/Texture2.png"/>
+			</Material>
+			<Material name="Mesh4SG" type="lambert">
+				<Texture file="assets/textures/Texture4.png"/>
+			</Material>
+			<Material name="Mesh5SG" type="lambert">
+				<Texture file="assets/textures/Texture5.png"/>
+			</Material>
+			
+			<!-- Materiale generico -->
+			
+		</Materials>
+
+		<!-- Oggetti dinamici -->
+		<Objects>
+			<Object name="Boo" type="dynamic">
+				<Model path="assets/models/boo.obj"/>
+				<Textures>
+					<Texture slot="0" file="assets/textures/Texture0.png"/>
+					<Texture slot="1" file="assets/textures/Texture1.png"/>
+					<Texture slot="2" file="assets/textures/Texture2.png"/>
+					<Texture slot="3" file="assets/textures/Texture3.png"/>
+					<Texture slot="4" file="assets/textures/Texture4.png"/>
+					<Texture slot="5" file="assets/textures/Texture5.png"/>
+				</Textures>
+				<Position x="0" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+				<Rotation x="0" y="0" z="0"/>
+				<Behavior>
+					<Follow target="camera"/>
+					<Offset x="0" y="0" z="-2"/>
+				</Behavior>
+			</Object>
+			
+			<!-- Porta rimossa - ora caricata dal main come woodModel -->
+		</Objects>
+	</Scene>
+
+	<Settings>
+		<Window>
+			<Width>1920</Width>
+			<Height>1080</Height>
+			<Title>Luigi's Mansion Hall</Title>
+			<Fullscreen>false</Fullscreen>
+		</Window>
+
+		<Controls>
+			<MouseSensitivity>0.1</MouseSensitivity>
+			<MovementSpeed>15.0</MovementSpeed>
+		</Controls>
+
+		<Graphics>
+			<VSync>true</VSync>
+			<MSAA>4</MSAA>
+		</Graphics>
+	</Settings>
+</LuigisMansionHall>
