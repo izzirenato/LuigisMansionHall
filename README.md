@@ -48,6 +48,18 @@ This project served as my introduction to graphics programming, representing my 
 
 Built with Visual Studio and requires OpenGL-compatible graphics hardware.
 
+## Build and Run
+
+Requirements: Windows, Visual Studio 2022 with the *Desktop development with C++* workload, and an OpenGL 3.3+ capable GPU.
+
+1. Open `LuigisMansionHall.sln` in Visual Studio.
+2. Select the **Debug** and **x64** configuration.
+3. Press **F5** (or **Ctrl+F5** to run without the debugger).
+
+The GLFW and Assimp libraries are included in `third_party/lib/windows/x64`. A post-build step copies `assimp-vc143-mt.dll` next to the executable, so no manual setup is needed. Run the program from Visual Studio, or with the project folder as working directory, because shaders, models and `config.xml` are loaded through relative paths.
+
+Controls: WASD to move, Space/Shift for up/down, P to pause, ESC to exit.
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.

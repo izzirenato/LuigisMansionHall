@@ -1,6 +1,6 @@
 # Build directories
 build/
-x64/
+/x64/
 Debug/
 Release/
 bin/
@@ -18,7 +18,6 @@ obj/
 .vscode/
 
 # Temporary build files
-*.obj
 *.pch
 *.pdb
 *.pgc
@@ -126,3 +125,6 @@ Makefile
 
 # Other build systems
 *.make
+# Third-party libraries needed to build (override the *.lib / *.dll rules above)
+!/third_party/lib/windows/x64/*.lib
+!/third_party/lib/windows/x64/*.dll
